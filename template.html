@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {{
+            background-color: #ffffff;
+            margin: 0;
+        }}
+        .container{{
+            width: auto;
+            margin: 0 auto;
+            background-color: #424242;
+            padding-top: 2.5%;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            padding-bottom: 2.5%;
+            border: 1px solid #000
+        }}
+        .header-div{{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            align-items: center;
+        }}
+        .main{{
+            background-color: #000;
+        }}
+        .container .main .weather-img .weather-header{{
+            width: 100%;
+            margin: 0 auto;
+        }}
+        .container .main .weather-info{{
+            padding-right: 2%;
+            padding-left: 2%;
+        }}
+        .container .main .weather-title-div{{
+            margin: 0 auto;
+            float: left;
+            width: 30%;
+        }}
+        .container .main .weather-info .weather-forecast-title{{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }}
+        .container .main .weather-info .weather-information .date{{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            float: left;
+        }}
+        .container .main .weather-info .weather-information .time{{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            float: right;
+        }}
+        .container .main .weather-info .weather-information{{
+            padding-left: 33%;
+        }}
+        .container .main .weather-info .weather-information .weather-forecast-info{{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }}
+        .news-header{{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            align-items: center;
+        }}
+        .news-header .on-the-lines{{
+            width: 100%;
+        }}
+        .container .main .news-title-div{{
+            text-align: center;
+        }}
+        .container .main .news-heading{{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }}
+        .news-info{{
+            padding-left: 2%;
+            padding-right: 2%;
+        }}
+        .news-info .news-title{{
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }}
+        .news-info .news-desc{{
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+        }}
+        .stocks-section{{
+            padding-left: 2%;
+            padding-right: 2%;
+        }}
+        .stocks-section .stocks-title{{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            text-align: center;
+        }}
+        .stocks-section .stocks{{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }}
+        .gnews-link-div{{
+            padding-bottom: 2%;
+            text-align: center;
+            padding-left: 2%;
+            padding-right: 2%;
+        }}
+        .gnews-link-div .gnews{{
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }}
+        .gnews-link-div .gnews-link{{
+            color: #0000EE;
+            font-family: Arial, Helvetica, sans-serif;
+        }}
+        .feedback-div {{
+            padding-left: 3%;
+            padding-right: 3%;
+            text-align: center;
+            border-bottom: 2px solid #000;
+        }}
+        .feedback{{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #fff;
+        }}
+        .yahoo {{
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-bottom: 2%;
+            text-align: center;
+            border-bottom: 2px solid #000;
+        }}
+        .yahoo-mail{{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #fff;
+        }}
+        .gmail-acc-link{{
+            color: #0000EE;
+        }}
+        @media screen and (min-width: 501px){{
+            .container .main .weather-info .weather-forecast-title{{
+                font-size: 30px;
+            }}
+            .container .main .weather-info .weather-information .date{{
+                font-size: 20px;
+            }}
+            .container .main .weather-info .weather-information .time{{
+                font-size: 20px;
+            }}
+            .container .main .weather-info .weather-information .weather-forecast-info{{
+                font-size: 20px;
+            }}
+            .container .main .news-heading{{
+            font-size: 30px;
+            }}
+            .news-info .news-title{{
+            font-size: 30px;
+            }}
+            .news-info .news-desc{{
+                font-size: 25px;
+            }}
+            .stocks-section .stocks-title{{
+                font-size: 25px;
+            }}
+            .stocks-section .stocks{{
+                font-size: 20px;
+            }}
+        }}
+        @media screen and (max-width: 500px){{
+            .container .main .weather-info .weather-forecast-title{{
+            font-size: 20px;
+            }}
+            .container .main .weather-info .weather-information .date{{
+                font-size: 15px;
+            }}
+            .container .main .weather-info .weather-information .time{{
+                font-size: 15px;
+            }}
+            .container .main .weather-info .weather-information .weather-forecast-info{{
+                font-size: 15px;
+            }}
+            .container .main .news-heading{{
+            font-size: 25px;
+            }}
+            .news-info .news-title{{
+                font-size: 25px;
+            }}
+            .news-info .news-desc{{
+                font-size: 20px;
+            }}
+            .stocks-section .stocks-title{{
+                font-size: 20px;
+            }}
+            .stocks-section .stocks{{
+                font-size: 15px;
+            }}
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header-div">
+            <img class="header" src="https://res.cloudinary.com/swix/image/upload/v1618682772/The%20Cable/The_Cable_PS_PNG_siin2w.png">
+        </div>
+
+        <article class="main">
+
+            <div class="weather-img">
+                <img class="weather-header" src="https://res.cloudinary.com/swix/image/upload/v1618678911/The%20Cable/Sunshine_or_Not_m77rg8.jpg">
+            </div>
+
+            <div class="weather-info">
+
+                <div class="weather-title-div">
+                <p class="weather-forecast-title">Today's weather Forecast: {title:}</p>
+                </div>
+
+                <div class="weather-information">
+                    <p class="date">{date:}</p>
+                    <p class="time">{time:}</p>
+                    <p class="weather-forecast-info"><br><br><br>Today the sun rose at {sunrise:} and it is expected to become dark by {sunset:}.
+                                                    The all day low is forecasted to be around {min_temp:}°C, with an all-day high of {max_temp:}°C.
+                                                    However, you will feel it to be around {feels_like:}°C throughout the day, and its been described as "{desc:}".</p>
+                </div>
+            </div>
+            <div class="news-section">
+                <div class="news-header">
+                    <img class="on-the-lines" src="https://res.cloudinary.com/swix/image/upload/v1618679267/The%20Cable/On_The_Lines_shadow_pbk3fz.jpg">
+                </div>
+                <div class="news-title-div">
+                    <p class="news-heading">RECENT TOP 5 STORIES:</p>
+                </div>
+                <div class="news-info">
+                    <p class="news-title">{news_title_one:}:<br></p>
+                    <p class="news-desc">{news_desc_one:}<br><br><br></p>
+
+                    <p class="news-title">{news_title_two:}:<br></p>
+                    <p class="news-desc">{news_desc_two:}<br><br><br></p>
+
+                    <p class="news-title">{news_title_three:}:<br></p>
+                    <p class="news-desc">{news_desc_three:}<br><br><br></p>
+
+                    <p class="news-title">{news_title_four:}:<br></p>
+                    <p class="news-desc">{news_desc_four:}<br><br><br></p>
+
+                    <p class="news-title">{news_title_five:}:<br></p>
+                    <p class="news-desc">{news_desc_five:}<br><br><br></p>
+                </div>
+                <div class="stocks-section">
+                    <p class="stocks-title"><u>STOCKS(End of Day Price)</u></p>
+                    <p class="stocks">BTC: INR {BTC:}</p>
+                    <p class="stocks">DOGE: INR {DOGE:}</p>
+                    <p class="stocks">TSLA: ${TSLA:}</p>
+                    <p class="stocks">AAPL: ${AAPL:}</p>
+                    <p class="stocks">AMZN: ${AMZN:}</p>
+                    <p class="stocks">RELIANCE: INR {RELIANCE:}</p>
+                    <p class="stocks">INFY: INR {INFY:}</p>
+                    <p class="stocks">TCS: INR {TCS:}</p>
+                    <p class="stocks">$1 = INR {EXCHANGE:}</p>
+                </div>
+                <div class="gnews-link-div">
+                    <p class="gnews"><br>For more news and information, be sure to visit <a class="gnews-link" href="https://news.google.com/topstories?hl=en-IN&gl=IN&ceid=IN:en"><u>Google News</u></a> for news and <a class="gnews-link" href="https://economictimes.indiatimes.com/markets/stocks/news">The Economic Times</a> for the latest news about the Markets.<p>
+                </div>
+            </div>
+        </article>
+        <div class="feedback-div">
+            <p class="feedback">This email has been sent to: <u>{email:}</u>. If you would like to unsubscribe, update your email or give some feedback, please mail us at <u>***</u>.</p>
+        </div>
+        <div class="yahoo">
+            <p class="yahoo-mail"><br>For Yahoo Mail users: We are extremely sorry if the fonts and the styling are unable to load for you. To fix this problem, click <a class=gmail-acc-link href="https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp" target="_blank"><u>here</u></a>.</p>
+        </div>
+    </div>
+</body>
+</html>
